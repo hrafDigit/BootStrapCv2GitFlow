@@ -4,12 +4,38 @@
 	/* ========================================================================= */
 	/*	Page Preloader
 	/* ========================================================================= */
-
 	$(window).on('load', function () {
 		$('#preloader').fadeOut('slow', function () {
 			$(this).remove();
 		});
 	});
+
+	/* ========================================================================= */
+	/*	Navigation navBar on scroll (Added by hraf – jan. 2020)
+	/* ========================================================================= */
+	$(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 10 ) {
+            $('.navigation, .hero-area, .salutations').addClass('activated');
+        } else {
+            $('.navigation, .hero-area, .salutations').removeClass('activated');
+        }
+    });
+
+	/* ========================================================================= */
+	/*	Hero-Area ••• (Added by hraf – jan. 2020 – based on https://codepen.io/eversionsystems/pen/YOmqdj)
+	/* ========================================================================= */
+	$(".hero-area").css({ height: $(window).height() + "px" });
+	$(window).on("resize", function() {
+	  $(".hero-area").css({ height: $(window).height() + "px" });
+	});
+
+	/* ========================================================================= */
+	/*	Jumbotron ••• (Added by hraf – jan. 2020 – based on https://codepen.io/eversionsystems/pen/YOmqdj)
+	/* ========================================================================= */
+	// $(".jumbotron").css({ height: $(window).height() + "px" });
+	// $(window).on("resize", function() {
+	//   $(".jumbotron").css({ height: $(window).height() + "px" });
+	// });
 
 	/* ========================================================================= */
 	/*	Portfolio Filtering Hook
@@ -22,24 +48,22 @@
 	/* ========================================================================= */
 	/*	Portfolio Filtering Hook
 	/* =========================================================================  */
-
 	$(document).ready(function () {
 		var containerEl = document.querySelector('.filtr-container');
 		var filterizd;
 		if (containerEl) {
-				filterizd = $('.filtr-container').filterizr({});
+			filterizd = $('.filtr-container').filterizr({});
 		}
 		//Active changer
 		$('.portfolio-filter button').on('click', function () {
-				$('.portfolio-filter button').removeClass('active');
-				$(this).addClass('active');
+			$('.portfolio-filter button').removeClass('active');
+			$(this).addClass('active');
 		});
-});
+	});
 
 	/* ========================================================================= */
 	/*	Testimonial Carousel
 	/* =========================================================================  */
-
 	//Init the slider
 	$('.testimonial-slider').slick({
 		slidesToShow: 2,
@@ -69,7 +93,6 @@
 	/* ========================================================================= */
 	/*	Clients Slider Carousel
 	/* =========================================================================  */
-
 	// clients logo slider
 	$('.clients-logo-slider').slick({
 		infinite: true,
@@ -112,7 +135,6 @@
 	/* ========================================================================= */
 	/*   Contact Form Validating
 	/* ========================================================================= */
-
 	$('#contact-form').validate({
 		rules: {
 			name: {
@@ -161,9 +183,7 @@
 
 	function initialize() {
 		var map;
-
 		var nottingham = new google.maps.LatLng(51.507351, -0.127758);
-
 		var style = [{
 			'stylers': [{
 				'hue': '#ff61a6'
@@ -177,18 +197,14 @@
 				'lightness': 10
 			}]
 		}];
-
 		var mapOptions = {
 			// SET THE CENTER
 			center: nottingham,
-
 			// SET THE MAP STYLE & ZOOM LEVEL
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 			zoom: 17,
-
 			// SET THE BACKGROUND COLOUR
 			backgroundColor: '#000',
-
 			// REMOVE ALL THE CONTROLS EXCEPT ZOOM
 			panControl: false,
 			zoomControl: true,
@@ -199,7 +215,6 @@
 			zoomControlOptions: {
 				style: google.maps.ZoomControlStyle.LARGE
 			}
-
 		};
 		map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
@@ -213,7 +228,6 @@
 		//CREATE A CUSTOM PIN ICON
 		var marker_image = 'images/marker.png';
 		var pinIcon = new google.maps.MarkerImage(marker_image, null, null, null, new google.maps.Size(25, 33));
-
 		var marker = new google.maps.Marker({
 			position: nottingham,
 			map: map,
@@ -221,8 +235,6 @@
 			title: 'navigator'
 		});
 	}
-
 	google.maps.event.addDomListener(window, 'load', initialize);
-
 
 })(jQuery);

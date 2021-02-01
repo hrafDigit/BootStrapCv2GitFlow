@@ -8,11 +8,10 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description"
-        content="chef de projet digital communication numérique CV curriculum vitae resume contact page stay in touch">
+	<meta name="description" content="chef de projet digital communication numérique développement-web programmation javascript front-end back-end node-js angular ionic react react-native achraf curriculum vitae el-youssoufi CV resume">
     <meta name="author" content="Achraf el youssoufi">
 
-    <title>Contact | Achraf ely</title>
+    <title>Contact | Achraf</title>
 
     <!-- Mobile Specific Meta
   ================================================== -->
@@ -44,7 +43,7 @@
     <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body id="body">
@@ -72,50 +71,49 @@
     ==================================== -->
 
 
-    <!--
-    Fixed Navigation
-    ==================================== -->
-    <section class="header navigation fixed-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="images/logo.png" alt="logo">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-                            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="tf-ion-android-menu"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navigation">
-                            <ul class="navbar-nav ml-auto">
+	<!--
+	START Fixed Navigation
+	==================================== -->
+	<section class="header navigation fixed-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<nav class="navbar navbar-expand-lg">
+						<a class="navbar-brand achraf-logo" href="index.html">achraf</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+							aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="tf-ion-android-menu"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navigation">
+							<ul class="navbar-nav ml-auto">
 								<li class="nav-item active">
 									<a class="nav-link" href="index.html">Accueil</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="curriculum.html">Mon Expérience</a>
+									<a class="nav-link" href="services.html">Services</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="services.html">Mes Services</a>
+									<a class="nav-link" href="portfolio.html">Portfolio</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="portfolio.html">Mon Portfolio</a>
+									<a class="nav-link" href="curriculum.html">&Agrave; propos <!-- Expérience --></a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="contact.html">Contact</a>
 								</li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--
-    END Fixed Navigation
-    ==================================== -->
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--
+	END Fixed Navigation
+	==================================== -->
 
-    <!--
+
+	<!--
     Start Single Page Header
     ==================================== -->
     <section class="single-page-header">
@@ -140,174 +138,206 @@
     ==================================== -->
 
 
-    <!-- 
-    Start Contact Us
-    =========================================== -->
-    <section class="contact-us section bg-gray" id="contact">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-12">
-                    <div class="title text-center">
-                        <h4>Exprimez-vous !</h4>
-                        <h2>Contact</h2>
-                        <span class="border"></span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque,
-                            obcaecati atque sit!
-                        </p>
-                    </div>
-                </div>
-            </div> <!-- END row -->
-
-            <div class="row">
-                <!-- Contact Details -->
-                <div class="col-md-6">
-                    <div class="map">
-                        <div id="map"></div>
-                    </div>
-                </div> <!-- END Contact Details -->
-                <!-- Contact Form -->
-                <div class="contact-form col-md-6 ">
-                    <form id="contact-form" method="post" action="sendmail.php" role="form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Votre nom" class="form-control" name="name" id="name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Votre Email" class="form-control" name="email" id="email">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Objet" class="form-control" name="subject" id="subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea rows="6" placeholder="Message" class="form-control" name="message"
-                                id="message"></textarea>
-                        </div>
-                        <div id="success" class="success">
-                            Merci. Votre courriel est en route :)
-                            Thank you. The Mailman is on His Way :)
-                        </div>
-                        <div id="error" class="error">
-                            <!-- Sorry, don't know what happened. Try later :( -->
-                            Désolé, une erreur est survenue. Essayer plus tard :(
-                        </div>
-                        <div id="cf-submit">
-                            <input type="submit" id="contact-submit" class="btn btn-transparent" value="Envoyer">
-                        </div>
-                    </form>
-                </div> <!-- END Contact Form -->
-            </div> <!-- end row -->
-
-            <div class="row">
-                <!-- Cartel #1 -->
-                <div class="col-md-4">
-                    <div class="address-block contact-meta-block">
-                        <i class="tf-ion-android-pin"></i>
-                        <h4>Adresse</h4>
-                        <p>
-                            8 rue de Madrid<br>
-                            75008 Paris, France<br>
-                        </p>
-                    </div>
-                </div> <!-- END Cartel #1 -->
-
-                <!-- Cartel #2 -->
-                <div class="col-md-4">
-                    <div class="phone-block contact-meta-block">
-                        <i class="tf-ion-ios-telephone"></i>
-                        <h4>Contact</h4>
-                        <p>
-                            Office: +33 (0)6 54 32 10<br>
-                            Fax: +33 (0)1 23 45 67
-                        </p>
-                    </div>
-                </div> <!-- END cartel #2 -->
-
-                <!-- Cartel #3 -->
-                <div class="col-md-4">
-                    <div class="social-icons-block contact-meta-block">
-                        <i class="tf-ion-ios-contact"></i>
-                        <h4>We are Social</h4>
-                        <ul class="list-inline social-icon">
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/achrafelyoussoufi/"><i
-                                        class="tf-ion-social-linkedin"></i></a></li>
-                            <li class="list-inline-item"><a href=""><i class="tf-ion-social-dribbble"></i></a></li>
-                            <!-- <li class="list-inline-item"><a href=""><i class="tf-ion-social-twitter"></i></a></li>
-											<li class="list-inline-item"><a href=""><i class="tf-ion-social-facebook"></i></a></li>
-											<li class="list-inline-item"><a href=""><i class="tf-ion-social-instagram"></i></a></li> -->
-                        </ul>
-                    </div>
-                </div> <!-- END cartel #3 -->
-            </div> <!-- END row -->
-
-        </div> <!-- end container -->
-    </section> <!-- end section -->
-    <!-- 
-    END Contact Us
-    =========================================== -->
-
-
-    <!-- Start FOOTER
+	<!--
+	START Contact section
 	=========================================== -->
-    <footer id="footer" class="bg-one">
-        <!-- Top-footer -->
-        <div class="top-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-                        <h3>&Agrave; propos</h3>
-                        <p>Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus
-                            cursus commodo, tortor mauris sed posuere.</p>
-                    </div> <!-- END .col-lg-3 &Agrave; propos -->
+	<section class="contact-us section bg-gray" id="contact">
+		<div class="container">
 
-                    <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-                        <h3>Mes Services</h3>
-                        <ul>
-                            <li><a href="#">Design Graphique </a></li>
-                            <li><a href="#">Design Web</a></li>
-                            <li><a href="#">Dévelopment Web</a></li>
-                        </ul>
-                    </div> <!-- END .col-lg-3 Mes Services -->
+			<div class="row">
+				<div class="col-12">
+					<div class="title text-center">
+						<h4>Exprimez-vous !</h4>
+						<h2>Contact</h2>
+						<span class="border"></span>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+							natoque penatibus et magnis dis parturient montes</p>
+					</div>
+				</div>
+			</div> <!-- END row -->
 
-                    <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-                        <h3>Liens éclairs</h3>
-                        <ul>
-                            <li><a href="#">Partenaires</a></li>
-                            <li><a href="#">&Agrave; propos</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Badges</a></li>
-                        </ul>
-                    </div> <!-- END .col-lg-3 Liens éclairs -->
+			<div class="row">
+				<!-- Contact Details -->
+				<div class="col-md-6">
+					<div class="map">
+						<div id="map"></div>
+					</div>
+				</div> <!-- END Contact Details -->
 
-                    <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-                        <h3>Abonnez-vous !</h3>
-                        <form class="subscribe-form">
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Email">
-                            </div>
-                            <button type="submit" class="btn btn-main-sm">Souscrire</button>
-                        </form>
-                    </div> <!-- END .col-lg-3 Abonnez-vous -->
+				<!-- Contact Form -->
+				<div class="contact-form col-md-6 ">
+					<form id="contact-form" method="post" action="sendmail.php" role="form">
+						<div class="form-group">
+							<input type="text" placeholder="Votre nom" class="form-control" name="name" id="name">
+						</div>
+						<div class="form-group">
+							<input type="email" placeholder="Votre Email" class="form-control" name="email" id="email">
+						</div>
+						<div class="form-group">
+							<input type="text" placeholder="Objet" class="form-control" name="subject" id="subject">
+						</div>
+						<div class="form-group">
+							<textarea rows="6" placeholder="Message" class="form-control" name="message"
+								id="message"></textarea>
+						</div>
+						<div id="success" class="success">
+							Merci. Votre courriel est en route :)
+							Thank you. The Mailman is on His Way :)
+						</div>
+						<div id="error" class="error">
+							<!-- Sorry, don't know what happened. Try later :( -->
+							Désolé, une erreur est survenue. Essayer plus tard :(
+						</div>
+						<div id="cf-submit">
+							<input type="submit" id="contact-submit" class="btn btn-transparent" value="Envoyer">
+						</div>
+					</form>
+				</div> <!-- END Contact Form -->
+			</div> <!-- END row -->
 
-                </div> <!-- END row -->
-            </div> <!-- END container -->
-        </div> <!-- END top-footer -->
+			<!-- Cartels -->
+			<div class="row">
+				<!-- Cartel #1 -->
+				<div class="col-md-4">
+					<div class="address-block contact-meta-block">
+						<i class="tf-ion-android-pin"></i>
+						<h4>Adresse</h4>
+						<p>
+							8 rue de Madrid<br>
+							75008 Paris, France<br>
+						</p>
+					</div>
+				</div> <!-- END Cartel #1 -->
 
-        <!-- Bottom-footer -->
-        <div class="footer-bottom">
-            <h5>©2021 - Tous droits réservés</h5>
-            <h6>Design and Developed by <a href="https://themefisher.com/" target="_blank">Themefisher</a>. Customiser
-                et optimiser par Achraf et <a href="http://grandjardindigital.fr/" target="_blank">Grand Jardin
-                    Digital</a></h6>
-            <!-- <h5>Copyright 2017. All rights reserved.</h5> -->
-            <!-- <h6>Design and Developed by <a href="https://themefisher.com/" target="_blank">Themefisher</a>. Get more bootstrap template form our <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Store</a></h6> -->
-        </div> <!-- Bottom-footer -->
+				<!-- Cartel #2 -->
+				<div class="col-md-4">
+					<div class="phone-block contact-meta-block">
+						<i class="tf-ion-ios-telephone"></i>
+						<h4>Contact</h4>
+						<p>
+							Office: +33 (0)6 54 32 10<br>
+							Fax: +33 (0)1 23 45 67
+						</p>
+					</div>
+				</div> <!-- END Cartel #2 -->
 
-    </footer> 
-    <!-- END FOOTER
-    ========================================== -->
+				<!-- Cartel #3 -->
+				<div class="col-md-4">
+					<div class="social-icons-block contact-meta-block">
+						<i class="tf-ion-ios-contact"></i>
+						<h4>We are Social</h4>
+						<ul class="list-inline social-icon">
+							<li class="list-inline-item">
+								<a href="https://www.linkedin.com/in/achrafelyoussoufi/">
+									<i class="tf-ion-social-linkedin"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href=""><i class="tf-ion-social-dribbble"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://github.com/hrafDigit/"><i class="tf-ion-social-github"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="https://codepen.io/hraf/"><i class="tf-ion-social-codepen"></i></a>
+							</li>
+							<!--
+							<li class="list-inline-item"><a href=""><i class="tf-ion-social-twitter"></i></a></li>
+							<li class="list-inline-item"><a href=""><i class="tf-ion-social-facebook"></i></a></li>
+							<li class="list-inline-item"><a href=""><i class="tf-ion-social-instagram"></i></a></li>
+							-->
+						</ul>
+					</div>
+				</div> <!-- END Cartel #3 -->
+			</div> <!-- END Cartels -->
 
-    <!-- 
+		</div> <!-- END container -->
+	</section> <!-- END section -->
+	<!--
+	END Contact section
+	=========================================== -->
+
+
+	<!--
+	START FOOTER Area
+	=========================================== -->
+	<footer id="footer" class="bg-one">
+		<!-- Top-footer -->
+		<div class="top-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+						<h3>Bio</h3>
+						<p>Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus
+							cursus commodo, tortor mauris sed posuere.</p>
+					</div> <!-- END .col-lg-3 &Agrave; propos -->
+
+					<div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+						<h3>Mes Services</h3>
+						<ul>
+							<li><a href="developpement.html" title="phase de production – Développement">Développement</a></li>
+							<li><a href="integration.html" title="phase de production – Intégration">Intégration</a></li>
+							<li><a href="deploiement.html" title="phase de production – Déploiement">Déploiement</a></li>
+							<!-- <li title="pre-production">
+								<ol style="display: inline-block !important; padding-right: 4px;"><a href="conception.html" title="phase de pre-production – conception">Conception</a></ol>
+								<ol style="display: inline-block !important; padding-right: 4px"><a href="creation.html" title="phase de pre-production – création">Création</a></ol>
+								<ol style="display: inline-block !important; padding-right: 4px"><a href="xxxxxxtion.html" title="phase de pre-production – xxxxxxtion">xxxxxxtion</a></ol>
+							</li>
+							<li title="production">
+								<ol style="display: inline-block !important;"><a href="developpement.html" title="phase de production – Développement">Développement</a></ol>
+								<ol style="display: inline-block !important;"><a href="integration.html" title="phase de production – Intégration">Intégration</a></ol>
+								<ol style="display: inline-block !important;"><a href="deploiement.html" title="phase de production – Déploiement">Déploiement</a></ol>
+							</li>
+							<li title="post-production">
+								<ol style="display: inline-block !important;"><a href="conception.html" title="phase de post-production Activation">Activation</a></ol>
+								<ol style="display: inline-block !important;"><a href="creation.html" title="phase de post-production – Animation">Animation</a></ol>
+								<ol style="display: inline-block !important;"><a href="realisation.html" title="phase de post-production – Visibilité">Visibilité</a></ol>
+							</li> -->
+						</ul>
+					</div> <!-- END .col-lg-3 Mes Services -->
+
+					<div class="col-lg-3 col-sm-6 mb-4 mb-lg-0	">
+						<h3>Liens éclairs</h3>
+						<ul>
+							<li><a href="apropos.html">&Agrave; propos</a></li>
+							<li><a href="partenaires.html">Partenaires</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+						</ul>
+					</div> <!-- END .col-lg-3 Liens éclairs -->
+
+					<div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+						<h3>Abonnez-vous !</h3>
+						<form class="subscribe-form">
+							<div class="form-group">
+								<input type="email" class="form-control" id="exampleInputEmail1"
+									aria-describedby="emailHelp" placeholder="Email">
+							</div>
+							<button type="submit" class="btn btn-main-sm">Souscrire</button>
+						</form>
+					</div> <!-- END .col-lg-3 Abonnez-vous -->
+
+				</div> <!-- END row -->
+			</div> <!-- END container -->
+		</div> <!-- END top-footer -->
+
+		<!-- Bottom-footer -->
+		<div class="footer-bottom">
+			<h5>2021 &#xA9; Achraf | Tous droits réservés | <a href="credits.html">crédits</a></h5>
+			<h6>
+				<a href="https://getbootstrap.com/">Bootstrap</a>
+				theme found at <a href="https://themefisher.com/" target="_blank">Themefisher</a>,
+				pimped by hraf [at] <a href="http://grandjardindigital.fr/" target="_blank">Grand Jardin Digital</a>
+				| from Paris with <i class="tf-ion-ios-heart"></i>
+			</h6>
+			<!-- <h5>Copyright 2017. All rights reserved.</h5> -->
+			<!-- <h6>Design and Developed by <a href="https://themefisher.com/" target="_blank">Themefisher</a>. Get more bootstrap template form our <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Store</a></h6> -->
+		</div> <!-- Bottom-footer -->
+
+	</footer> <!-- END footer -->
+	<!-- END FOOTER Area
+	========================================== -->
+
+    <!--
     Essential Scripts
     =====================================-->
     <!-- Main jQuery -->
@@ -324,7 +354,7 @@
     <script src="plugins/filterzr/jquery.filterizr.min.js"></script>
     <!-- Smooth Scroll js -->
     <script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI14J_PNWVd-m0gnUBkjmhoQyNyd7nllA"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI14J_PNWVd-m0gnUBkjmhoQyNyd7nllA"></script> -->
     <!-- Form Validation -->
     <script src="plugins/form-validation/jquery.form.js"></script>
     <script src="plugins/form-validation/jquery.validate.min.js"></script>
@@ -332,8 +362,8 @@
     <script type="text/javascript" src="plugins/revo-slider/js/jquery.themepunch.tools.min.js"></script>
     <script type="text/javascript" src="plugins/revo-slider/js/jquery.themepunch.revolution.min.js"></script>
     <script src="js/script.js"></script>
-    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
-(Load Extensions only on Local File Systems ! 
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS
+(Load Extensions only on Local File Systems !
 The following part can be removed on Server for On Demand Loading) -->
     <script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.actions.min.js"></script>
     <script type="text/javascript"
